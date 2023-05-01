@@ -1,0 +1,45 @@
+.profileInfo {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(2, 2fr);
+  grid-template-areas:
+    "name name photo"
+    "info info info";
+  border: 5px solid #ffffff50;
+  border-radius: 2rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 25px;
+}
+
+.profileInfo:hover {
+  border: 5px solid transparent;
+  background: linear-gradient(#252525, #252525) padding-box,
+    linear-gradient(to right, #00ff00, #80ff80) border-box;
+  border-radius: 2rem;
+}
+
+.profileInfoPhoto {
+  grid-area: photo;
+  border-radius: 50%;
+  border: 15px solid #202020;
+  width: 75%;
+}
+
+.profileName {
+  grid-area: name;
+  font-family: monospace;
+  font-size: 75px;
+  display: grid;
+  align-self: center;
+  color: #80ff80;
+}
+
+.profileInformationDiv {
+  grid-area: info;
+  font-family: monospace;
+  font-size: 25px;
+}
+
+.profileInformation {
+  color: #80ff80;
+}

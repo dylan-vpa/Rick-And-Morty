@@ -1,0 +1,53 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "about snetworks thx";
+  gap: 50px;
+  background: linear-gradient(#252525, #252525) padding-box,
+    linear-gradient(to right, #80ff80, #80ff80) border-box;
+  border: 4px solid transparent;
+  padding: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.aboutMe {
+  grid-area: about;
+}
+
+.socialNetworks {
+  grid-area: snetworks;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.SocialNetwork {
+  width: 40px;
+}
+
+.thanks {
+  grid-area: thx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title3 {
+  font-family: monospace;
+  font-size: 30px;
+  color: #80ff80;
+}
+
+.pf {
+  font-family: monospace;
+  font-size: 20px;
+  color: #ffffff80;
+}
+
+.footerEnd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
